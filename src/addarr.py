@@ -602,7 +602,8 @@ async def pathSerieMovie(update, context):
         free = format_bytes(p['freeSpace'])
         keyboard += [[
             InlineKeyboardButton(
-            f"Path: {pathtxt}, Free: {free}",
+            #f"Path: {pathtxt}, Free: {free}",
+            f"Film / Serie herunterladen",
             callback_data=f"Path: {p['path']}"
             ),
         ]]
