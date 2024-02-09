@@ -5,7 +5,7 @@ LABEL org.opencontainers.image.source https://github.com/cyb3rgh05t/addarr
 
 WORKDIR /app
 
-# Install requirements
+# #Install requirements
 RUN apk add --no-cache \
             transmission-cli
 
