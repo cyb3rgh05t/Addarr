@@ -3,9 +3,13 @@ de-de:
   Start: Start
   Stop: Stop
   Movie: Film
-  MovieWithArticle: Der Film
+  MovieWithArticle: den Film
+  MovieWithArticle2: der Film
+  MovieWithArticle3: dem Film
   Series: Serie
-  SeriesWithArticle: Die Serie
+  SeriesWithArticle: die Serie
+  SeriesWithArticle2: die Serie
+  SeriesWithArticle3: der Serie
   Start chatting: Starte mit Addarr auf Telegram zu chatten. Das erste Mal wenn du "start" verwendest wirst du gebeten dein Password einzugeben.
   End: Das Bestellen von Filmen und Serien ist beendet.
   Title: "Gebe den Film oder Serien Titel ein:"
@@ -46,16 +50,16 @@ de-de:
   messages:
     Add: Ja füge %{subject} hinzu
     This: Willst du %{subjectWithArticle} hinzufügen?
-    ThisDelete: Ist dies %{subjectWithArticle}, das Sie löschen möchten?
-    AddFailed: Oops, das hinzufügen von %{subjectWithArticle} ist fehlgeschlagen. Probiere es doch nochmal.
-    DeleteFailed: Oops, das löschen von %{subjectWithArticle} ist fehlgeschlagen. Probiere es doch nochmal.
-    AddSuccess: "%{subjectWithArticle} würde hinzugefügt 🙂"
-    DeleteSuccess: "%{subjectWithArticle} würde erfolgreich entfernt 🙂"
-    Exist: "%{subjectWithArticle} gibt es bereits 😉"
-    NoExist: "%{subjectWithArticle} existiert nicht."
+    ThisDelete: Ist dies %{subjectWithArticle2}, das Sie löschen möchten?
+    AddFailed: Oops, das hinzufügen von %{subjectWithArticle3} ist fehlgeschlagen. Probiere es doch nochmal.
+    DeleteFailed: Oops, das löschen von %{subjectWithArticle3} ist fehlgeschlagen. Probiere es doch nochmal.
+    AddSuccess: "%{subject} wurde hinzugefügt 🙂"
+    DeleteSuccess: "%{subject} wurde erfolgreich entfernt 🙂"
+    Exist: "%{subject} gibt es bereits 😉"
+    NoExist: "%{subject} existiert nicht."
 
   searchresults:
-    zero: Es würden keine Ergebnisse gefunden
+    zero: Es wurden keine Ergebnisse gefunden
     one: Ein Ergebnis gefunden
     other: "%{count} Ergebnisse gefunden"
 
