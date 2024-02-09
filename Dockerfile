@@ -1,8 +1,5 @@
 FROM python:3.11.5-alpine3.18
 
-LABEL maintainer=cyb3rgh05t
-LABEL org.opencontainers.image.source https://github.com/cyb3rgh05t/addarr
-
 WORKDIR /app
 
 # #Install requirements
