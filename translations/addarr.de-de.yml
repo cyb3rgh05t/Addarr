@@ -14,7 +14,7 @@ de-de:
   End: Das Bestellen von Filmen und Serien ist beendet.
   Title: "Gebe den Film oder Serien Titel ein:"
   What is this?: Ist es eine Serie oder ein Film?
-  New: Führe einen neuen such Befehl aus
+  New: Führe einen neuen Befehl aus
   Next result: Nein, zeige mir das nächste Ergebnis
   Add: Ja, füge dies hinzu
   Delete: Ja, löschen Sie dies
@@ -55,7 +55,7 @@ de-de:
     DeleteFailed: Oops, das löschen von %{subjectWithArticle3} ist fehlgeschlagen. Probiere es doch nochmal.
     AddSuccess: "%{subject} wurde hinzugefügt 🙂"
     DeleteSuccess: "%{subject} wurde erfolgreich entfernt 🙂"
-    Exist: "%{subject} gibt es bereits 😉"
+    Exist: "%{subjectWithArticle} gibt es bereits 😉"
     NoExist: "%{subject} existiert nicht."
 
   searchresults:
