@@ -1,9 +1,6 @@
 version: '3'
 services:
   addarr:
-    container_name: addarr
-    image: waterboy1602/addarr
-    restart: unless-stopped
     network_mode: host
     volumes:
     - ./config.yaml:/app/config.yaml:ro
@@ -11,3 +8,30 @@ services:
     - ./admin.txt:/app/admin.txt:ro
     - ./allowlist.txt:/app/allowlist.txt:ro
     - ./logs:/app/logs:rw  #optional
+    hostname: "addarr"
+    container_name: "addarr"
+    environment:
+      - "PGID=${ID}"
+      - "PUID=${ID}"
+      - "TZ=${TZ}"
+    networks:
+      - ${DOCKERNETWORK}
+    security_opt:
+      - "${SECURITYOPS}:${SECURITYOPSSET}"
+    labels:
+      - "dockupdater.enable=false"
+    image: "ghcr.io/cyb3rgh05t/addarr:latest"
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    restart: "${RESTARTAPP}"
+    volumes:
+      - "/opt/appdata/addarr/config.yaml:/app/config.yaml:ro"
+      - "/opt/appdata/addarr/chatid.txt:/app/chatid.txt:rw"
+      - "/opt/appdata/addarr/admin.txt:/app/admin.txt:ro"
+      - "/opt/appdata/addarr/allowlist.txt:/app/allowlist.txt:ro"
+      - "/opt/appdata/addarr/logs:/app/logs:rw"  #optional
+
+networks:
+  proxy:
+    driver: bridge
+    external: true
